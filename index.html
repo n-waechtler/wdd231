@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page</title>
+    <meta name="description" content="Course home page for WDD 231">
+    <meta name="author" content="Nicholas Waechtler">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 640px)">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/my_logo1.png" alt="Site Logo" width="50" height="50">
+        <span>Nicholas Waechtler</span>
+        <button id="menu" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+    <nav>
+        <ul id="animateme">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>Course Work</h2>
+        </section>
+        <section class="card">
+            <h2>Place Information</h2>
+        </section>
+        <section class="card">
+            <h2>Web & Computer Programming Certificate</h2>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="wdd">WDD</button>
+                <button id="cse">CSE</button>
+            </div>
+            <div id="course-container">
+
+            </div>
+            <p id="total-credits">Total Credits: </p>
+        </section>
+    </main>
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/n-waechtler">Github</a>
+            <a href="https://www.linkedin.com/in/nicholas-waechtler-9626b2290/">LinkedIn</a>
+        </div>
+        <p>&copy;<span id="currentYear"></span> | Nicholas Waechtler | UT/United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
