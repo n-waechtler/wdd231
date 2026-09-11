@@ -28,11 +28,17 @@ header img {
     height: auto;
 }
 
+header .logo-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 header span {
     font-size: 1.3rem;
     font-weight: bold;
-    flex-grow: 1;
     white-space: nowrap;
+    margin-left: -50px;
 }
 
 #menu {
