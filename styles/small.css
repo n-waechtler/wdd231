@@ -24,9 +24,9 @@ header {
 }
 
 header img {
-    max-width: 45px;
+    max-width: 150px;
+    width: 100%;
     height: auto;
-    flex-shrink: 0;
 }
 
 header span {
