@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Directory</title>
+    <meta name="description" content="WDD 231 Chamber of commerce director page week02 assignment">
+    <meta name="author" content="Nicholas Waechtler">
+    <link rel="icon" href="">
+
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="styles/nomalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/chamber_logo.png" alt="Utah Chamber Logo">
+            <h1>Utah Chamber</h1>
+        </div>
+        <nav>
+            <button id="menuButton" aria-label="Toggle Menu">≡</button>
+            <ul id="navMenu">
+                <li><a href="#" class="active">Directory</a></li>
+                <li><a href="#">Joint</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="directory-control">
+            <h2>Business Directory</h2>
+            <div class="toggle-buttons">
+                <button id="gridBtn" title="Switch to Grid View">🌐 Grid</button>
+                <button id="listBtn" title="Switch to List View">📄 List</button>
+            </div>
+        </div>
+
+        <div id="directoryContainer" class="grid-mode"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Nicholas Waechtler | UT - United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
