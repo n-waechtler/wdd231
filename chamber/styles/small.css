@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f7f9fa;
+}
+
+header {
+    background-color: #0b3c5d;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo-area img {
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+#navMenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+#navMenu.open {
+    display: block;
+}
+
+#directoryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.member-card {
+    background: white;
+    padding: 1.25rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.member-card img {
+    max-width: 120px;
+    height: auto;
+}
+
+.membership-badge {
+    display: inline-block;
+    padding: .25rem .5rem;
+    font-size: .8rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #0b3c5d;
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+    border-top: 2px solid #cbd5e1;
+    text-align: center;
+    font-size: .9rem;
+}
+
+footer p {
+    margin: .5rem 0;
+}
