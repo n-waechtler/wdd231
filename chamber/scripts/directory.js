@@ -11,9 +11,11 @@ if (lastModifiedElement) {
 const menuButton = document.getElementById("menuButton");
 const navMenu = document.getElementById("navMenu")
 
-menuButton.addEventListener("click", () => {
-    navMenu.classList.toggle("open");
-});
+if (menuButton && navMenu) {
+    menuButton.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+    });
+}
 
 const jsonUrl = "data/members.json";
 const directoryContainer = document.getElementById("directoryContainer");
@@ -28,11 +30,14 @@ async function fetchMembers() {
         buildMemberCards(membersArray);
     } catch (error) {
         console.error("Failed to load business data directory:", error);
-        directoryContainer.innerHTML = `<p class="error">Unable to load business listings right now.</p>`;
+        if (directoryContainer) {
+            directoryContainer.innerHTML = `<p class="error">Unable to load business listings right now.</p>`;
+        }
     }
 }
 
 function buildMemberCards(members) {
+    if (!directoryContainer) return;
     directoryContainer.innerHTML = "";
 
     members.forEach(member => {
@@ -50,8 +55,8 @@ function buildMemberCards(members) {
             <h3>${member.name}</h3>
             <p class="tagline">"${member.tagline}"</p>
             <hr>
-            <p class="contact-info>📍 ${member.address}</p>
-            <p class="contact-info>📞 ${member.phone}</p>
+            <p class="contact-info">📍 ${member.address}</p>
+            <p class="contact-info">📞 ${member.phone}</p>
             <p class="membership-badge tier-${member.membershipLevel}">${tierLabel}</p>
             <a href="${member.website}" target="_blank" rel="noopener">Visit Directory Website</a>
         `;
@@ -63,12 +68,14 @@ function buildMemberCards(members) {
 const gridBtn = document.getElementById("gridBtn");
 const listBtn = document.getElementById("listBtn");
 
-gridBtn.addEventListener("click", () => {
-    directoryContainer.checkVisibility.className = "grid-mode";
-});
+if (gridBtn && listBtn) {
+    gridBtn.addEventListener("click", () => {
+        directoryContainer.className = "grid-mode";
+    });
 
-listBtn.addEventListener("click", () => {
-    directoryContainer.className = "list-mode";
-});
+    listBtn.addEventListener("click", () => {
+        directoryContainer.className = "list-mode";
+    });
+}
 
 fetchMembers();

@@ -1,7 +1,7 @@
 [
     {
         "name": "The LEGO Store Fashion Place",
-        "address": "6191 S State St Space 1765, Murray, UT 84107",
+        "address": "6191 S. State St. Space 1765, Murray, UT 84107",
         "phone": "801-992-0132",
         "website": "https://www.lego.com",
         "image": "images/brand-lego.svg",
@@ -10,7 +10,7 @@
     },
     {
         "name": "Galaxy of Games",
-        "address": "12488 S Rosecrest Rd C1, Herriman, UT 84096",
+        "address": "12488 S. Rosecrest Rd. C1, Herriman, UT 84096",
         "phone": "801-332-9889",
         "website": "https://galaxyof.games",
         "image": "images/galaxy.png",
@@ -18,48 +18,48 @@
         "tagline": "A place for everyone to play any game."
     },
     {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "tagline": ""
+        "name": "Tacoma Lifestyle",
+        "address": "1467 W. 105 N. Orem, UT 84057",
+        "phone": "385-526-3903",
+        "website": "https://tacomalifestyle.com",
+        "image": "images/tacoma_lifestyle_logo.avif",
+        "membershipLevel": "3",
+        "tagline": "Build your dream rig."
     },
     {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "tagline": ""
+        "name": "Cyprus Credit Union",
+        "address": "3876 Center View Way, West Jordan, UT 84084",
+        "phone": "801-260-7600",
+        "website": "https://cypruscu.com",
+        "image": "images/cyprus.jpg",
+        "membershipLevel": "1",
+        "tagline": "Your future is our future."
     },
     {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "tagline": ""
+        "name": "West Valley Hobbies",
+        "address": "1765 W. 5400 S. Taylorsville, UT 84126",
+        "phone": "801-964-1700",
+        "website": "https://wvhobbies.com",
+        "image": "images/wvh_logo.jpg",
+        "membershipLevel": "2",
+        "tagline": "Lets fuel your next hobby."
     },
     {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "tagline": ""
+        "name": "TNT Guns & Range",
+        "address": "5669 S Commerce Dr. Murray, UT 84107",
+        "phone": "385-800-2400",
+        "website": "https://tntgunrange.com",
+        "image": "images/tnt.webp",
+        "membershipLevel": "1",
+        "tagline": "We have all sorts of lane sizes for your shooting preferences."
     },
     {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "tagline": ""
+        "name": "Scheels",
+        "address": "11282 S. State St. Sandy, UT 84070",
+        "phone": "801-948-7080",
+        "website": "https://scheels.com",
+        "image": "images/scheels.webp",
+        "membershipLevel": "2",
+        "tagline": "We have all your outdoor needs. "
     }
 ]

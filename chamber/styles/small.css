@@ -33,6 +33,17 @@ header h1 {
     margin: 0;
 }
 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
 #navMenu {
     display: none;
     list-style: none;
