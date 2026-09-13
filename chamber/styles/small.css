@@ -84,3 +84,6 @@ footer {
 footer p {
     margin: .5rem 0;
 }
+
+.tier-3 { background-color: #ffd700; color: #333; }
+.tier-2 { background-color: #c0c0c0; color: #333;}

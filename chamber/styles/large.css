@@ -1,0 +1,30 @@
+@media (min-width: 768px) {
+    #menuButton { display: none; }
+    #navMenu { display: flex; gap: 1.5rem; }
+
+    #directoryContainer.grid-mode {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, fr));
+        gap: 1.5rem;
+    }
+
+    #directoryContainer.list-mode {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    #directoryContainer.list-mode .member-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: .75rem 1.5rem;
+    }
+
+    #directoryContainer.list-mode .card-image-wrap,
+    #directoryContainer.list-mode .tagline,
+    #directoryContainer.list-mode hr {
+        display: none;
+    }
+}
