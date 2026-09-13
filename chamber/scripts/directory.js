@@ -12,7 +12,7 @@ const menuButton = document.getElementById("menuButton");
 const navMenu = document.getElementById("navMenu")
 
 if (menuButton && navMenu) {
-    menuButton.addEventListener("click", () => {
+    menuButton.addEventListener('click', () => {
         navMenu.classList.toggle("open");
     });
 }
@@ -45,12 +45,12 @@ function buildMemberCards(members) {
         card.classList.add("member-card");
 
         let tierLabel = "General Member";
-        if (member.membershipLevel === 2) tierLabel = "Silver Partner";
+        if (member.membershipLevel === 2) tierLabel = "Silver Partner"; 
         if (member.membershipLevel === 3) tierLabel = "Gold Partner";
 
         card.innerHTML = `
             <div class="card-image-wrap">
-                <img src="${member.image}" alt="${member.name} Logo" loading="lazy"
+                <img src="${member.image}" alt="${member.name} Logo" loading="lazy">
             </div>
             <h3>${member.name}</h3>
             <p class="tagline">"${member.tagline}"</p>

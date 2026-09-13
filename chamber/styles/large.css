@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 640px) {
     #menuButton { display: none; }
     #navMenu { display: flex; gap: 1.5rem; }
 

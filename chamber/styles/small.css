@@ -16,6 +16,16 @@ header {
     flex-wrap: wrap;
 }
 
+#menuButton {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: .5rem;
+    display: block;
+}
+
 .logo-area {
     display: flex;
     align-items: center;
@@ -94,6 +104,29 @@ footer {
 
 footer p {
     margin: .5rem 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    fill: #ffffff;
+    transition: fill .3s ease, transform .2s ease;
+}
+
+.social-icon a:hover {
+    fill: #85b3e2;
+    transform: scale(1.1);
+}
+
+#lastModified {
+    color: greenyellow;
 }
 
 .tier-3 { background-color: #ffd700; color: #333; }
