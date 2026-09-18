@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Directory</title>
+    <title>Chamber of Commerce - Home Page</title>
     <meta name="description" content="WDD 231 Chamber of commerce director page week02 assignment">
     <meta name="author" content="Nicholas Waechtler">
     <link rel="icon" href="images/favicon_chamber.ico">
@@ -42,8 +42,39 @@
             </ul>
         </nav>
     </header>
-    <main>
-       
+    <main class="home-grid">
+       <section class="hero-container">
+            <img src="images/hero.jpg" alt="Salt Lake City"
+                sizes="(max-width: 600px) 400px, 1200px"
+                loading="eager">
+            <div class="cta-overlay">
+                <h1>Empowering Local Business</h1>
+                <p>Join the Chamber today to network, grow, and thrive.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+       </section>
+       <section class="events-card">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li><strong>Oct 10</strong> Annual Tech Gala</li>
+            <li><strong>Oct 24</strong> Morning Networking Breakfast</li>
+        </ul>
+       </section>
+       <section class="weather-card">
+            <h2>Chamber Weather</h2>
+            <div id="current-weather">
+
+            </div>
+            <div id="forecast">
+
+            </div>
+       </section>
+       <section class="spotlights-container">       
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-cards">
+
+            </div>
+       </section>
     </main>
     <footer>
         <p>&copy;<span id="currentYear"></span> | Nicholas Waechtler | UT - United States</p>
