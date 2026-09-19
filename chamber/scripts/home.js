@@ -16,3 +16,51 @@ if (menuButton && navMenu) {
         navMenu.classList.toggle("open");
     });
 }
+
+const memberSource = "data/members.json";
+const cardWrapper = document.querySelector('#spotlight-cards');
+
+async function fetchSpotlightMembers() {
+    try {
+        const response = await fetch(memberSource);
+        if (!response.ok) {
+            throw new Error("Could not load the membership data registry.");
+        }
+        const memberList = await response.json();
+
+        const premiumMembers = memberList.filter(company => company.membershipLevel === 3 || company.membershipLevel === 2);
+
+        const shuffledOrder = premiumMembers.sort(() => 0.5 - Math.random());
+
+        const chosenSpotlights = shuffledOrder.slice(0, 3);
+
+        generateSpotlightCards(chosenSpotlights);
+    } catch (error) {
+        console.error("Spotlight Generation Failed:", error);
+    }
+}
+
+function generateSpotlightCards(selectedCompanies) {
+    cardWrapper.innerHTML = "";
+
+    selectedCompanies.forEach(company => {
+        const itemCard = document.createElement('section');
+        itemCard.className = 'spotlight-card';
+
+        itemCard.innerHTML = `
+            <h3>${company.name}</h3>
+            <div class="spotlight-logo-box">
+                <img src="${company.image}" alt="${company.name} branding logo" loading="lazy">
+            </div>
+            <hr>
+            <p><strong>Phone:</strong> ${company.phone}</p>
+            <p><strong>Address:</strong> ${company.address}</p>
+            <p><strong>Website:</strong> <a href="${company.website}" target="_blank" rel="noopener">${company.website}</a></p>
+            <div class="tier-tag">${company.membershipLevel === 3 ? 'Gold Partner' : 'Silver Partner'}</div>
+        `;
+
+        cardWrapper.appendChild(itemCard)
+    });
+}
+
+fetchSpotlightMembers();
