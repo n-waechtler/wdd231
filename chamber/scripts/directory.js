@@ -55,7 +55,7 @@ function buildMemberCards(members) {
 
         card.innerHTML = `
             <div class="card-image-wrap">
-                <img src="${member.image}" alt="${member.name} Logo" loading="lazy">
+                <img src="${member.image}" alt="${member.name} Logo" loading="lazy" width="200" height="150">
             </div>
             <h3>${member.name}</h3>
             <p class="tagline">"${member.tagline}"</p>
