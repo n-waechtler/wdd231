@@ -1,6 +1,34 @@
 @media (min-width: 640px) {
-    #menuButton { display: none; }
-    #navMenu { display: flex; gap: 1.5rem; }
+    #menuButton {
+         display: none; }
+    
+    #navMenu {
+        display: flex !important;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    #navMenu li {
+        border-bottom: none;
+        padding: 0;
+    }
+    
+     #navMenu a {
+        display: inline;
+        padding: 0;
+        color: #ffffff;
+    }
+    
+    #navMenu a:hover {
+        color: #ffd700 !important;
+        text-decoration: underline;
+    }
 
     #directoryContainer.grid-mode {
         display: grid;

@@ -14,6 +14,7 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 
 #menuButton {
@@ -44,7 +45,7 @@ header p {
 }
 
 nav a {
-    color: #ffffff;
+    color: #0b3c5d;
     text-decoration: none;
     font-weight: bold;
 }
@@ -57,7 +58,21 @@ nav a:hover {
 #navMenu {
     display: none;
     list-style: none;
-    padding: 0;
+    padding: 0.5rem 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#navMenu li {
+    padding: .75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #navMenu.open {
@@ -69,6 +84,18 @@ nav a:hover {
     flex-direction: column;
     gap: 1.5rem;
     padding: 1rem;
+}
+
+.directory-control {
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 1rem 0 1.5rem 0;
 }
 
 .member-card {

@@ -14,6 +14,11 @@ const navMenu = document.getElementById("navMenu")
 if (menuButton && navMenu) {
     menuButton.addEventListener('click', () => {
         navMenu.classList.toggle("open");
+        if (navMenu.classList.contains("open")) {
+            menuButton.textContent = "x";
+        } else {
+            menuButton.textContent = "≡";
+        }
     });
 }
 
