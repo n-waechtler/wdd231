@@ -3,10 +3,35 @@
             display: none;
         }
     
-        #navMenu {
-            display: flex;
-            gap: 1.5rem;
-        }
+    #navMenu {
+        display: flex !important;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #navMenu li {
+        border-bottom: none;
+        padding: 0;
+    }
+
+    #navMenu a {
+        display: inline;
+        padding: 0;
+        color: #ffffff;
+    }
+
+    #navMenu a:hover {
+        color: #ffd700 !important;
+        text-decoration: underline;
+        transition: color 0.2s ease;
+    }
+
     .home-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
