@@ -4,7 +4,7 @@
         "address": "6191 S. State St. Space 1765, Murray, UT 84107",
         "phone": "801-992-0132",
         "website": "https://www.lego.com",
-        "image": "images/brand-lego.svg",
+        "image": "images/lego-img.jpg",
         "membershipLevel": "3",
         "tagline": "Let's build together!"
     },
@@ -40,7 +40,7 @@
         "address": "1765 W. 5400 S. Taylorsville, UT 84126",
         "phone": "801-964-1700",
         "website": "https://wvhobbies.com",
-        "image": "images/wvh_logo.jpg",
+        "image": "images/wvh-img.jpg",
         "membershipLevel": "2",
         "tagline": "Lets fuel your next hobby."
     },
@@ -58,7 +58,7 @@
         "address": "11282 S. State St. Sandy, UT 84070",
         "phone": "801-948-7080",
         "website": "https://scheels.com",
-        "image": "images/scheels.webp",
+        "image": "images/scheels.jpg",
         "membershipLevel": "2",
         "tagline": "We have all your outdoor needs. "
     }
