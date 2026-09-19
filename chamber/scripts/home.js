@@ -28,7 +28,7 @@ async function fetchSpotlightMembers() {
         }
         const memberList = await response.json();
 
-        const premiumMembers = memberList.filter(company => company.membershipLevel === 3 || company.membershipLevel === 2);
+        const premiumMembers = memberList.filter(company => company.membershipLevel === "3" || company.membershipLevel === "2");
 
         const shuffledOrder = premiumMembers.sort(() => 0.5 - Math.random());
 
@@ -45,7 +45,7 @@ function generateSpotlightCards(selectedCompanies) {
 
     selectedCompanies.forEach(company => {
         const itemCard = document.createElement('section');
-        itemCard.className = 'spotlight-card';
+        itemCard.className = 'spotlight-cards';
 
         itemCard.innerHTML = `
             <h3>${company.name}</h3>
@@ -56,7 +56,7 @@ function generateSpotlightCards(selectedCompanies) {
             <p><strong>Phone:</strong> ${company.phone}</p>
             <p><strong>Address:</strong> ${company.address}</p>
             <p><strong>Website:</strong> <a href="${company.website}" target="_blank" rel="noopener">${company.website}</a></p>
-            <div class="tier-tag">${company.membershipLevel === 3 ? 'Gold Partner' : 'Silver Partner'}</div>
+            <div class="tier-tag tier-${company.membershipLevel}">${company.membershipLevel === "3" ? 'Gold Partner' : 'Silver Partner'}</div>
         `;
 
         cardWrapper.appendChild(itemCard)
