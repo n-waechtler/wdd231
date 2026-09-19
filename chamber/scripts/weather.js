@@ -5,7 +5,7 @@ const lat = "40.7607";
 const lon = "-111.8910";
 const apiKey = "1adaff4efb93fa6a3724f89a87e41d3d";
 
-const url = `https://openweathermap.org{lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 
 async function apiFetch() {
     try {
