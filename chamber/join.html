@@ -45,8 +45,47 @@
     </header>
     <main class="join-container">
         <form method="get" action="thankyou.html" id="membership-form">
-
-        </form>
+            <label title="First Name">
+                First Name:
+                <input type="text" name="firstname" autocomplete="given-name" required>
+            </label>
+            <label title="Last Name">
+                Last Name:
+                <input type="text" name="lastname" autocomplete="family-name" required>
+            </label>
+            <label title="Organizational Title">
+                Title / Position:
+                <input type="text" name="title" autocomplete="organization-title" placeholder="[A-Za-z\s\-]{7,}">
+            </label>
+            <label title="Email Address">
+                Email:
+                <input type="email" name="email" autocomplete="email" placeholder="example@domain.com" required>
+            </label>
+            <label title="Mobile Phone Number">
+                Mobile Phone:
+                <input type="text" name="phone" autocomplete="tel" required>
+            </label>
+            <label title="Organization Name">
+                Business/Organization Name:
+                <input type="text" name="organization" autocomplete="organization" required>
+            </label>
+            <label title="Membership Level">
+                Membership Level:
+                <select name="membership-level" required>
+                    <option value="" disabled selected>Select a level...</option>
+                    <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label title="Business Description">
+                Business Description:
+                <textarea name="description"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="form-timestamp">
+            <input type="submit" value="Submit Application">
+       </form>
         <section class="membership-cards">
 
         </section>
