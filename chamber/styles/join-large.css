@@ -1,0 +1,80 @@
+@media (min-width: 640px) {
+    #menuButton {
+        display: none;
+    }
+
+    #navMenu {
+        display: flex !important;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #navMenu li {
+        border-bottom: none;
+        padding: 0;
+    }
+
+    #navMenu a {
+        display: inline;
+        padding: 0;
+        color: #ffffff;
+    }
+
+    #navMenu a:hover {
+        color: #ffd700 !important;
+        text-decoration: underline;
+        transition: color 0.2s ease;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2rem;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .hero-container {
+        grid-column: 1 / -1;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .hero-container img {
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .events-card {
+        grid-column: 1 / 2;
+    }
+
+    .weather-card {
+        grid-column: 2 / 3;
+    }
+
+    .spotlights-container {
+        grid-column: 1 / -1;
+        margin-top: 1rem;
+    }
+
+    #spotlight-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .spotlight-cards {
+        flex: 1;
+    }
+}
