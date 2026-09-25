@@ -21,3 +21,28 @@ if (menuButton && navMenu) {
         }
     });
 }
+
+const urlParams = new URLSearchParams(window.location.search);
+
+const detailsContainer = document.getElementById("submission-details");
+
+const requiredFields = {
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "email": "Email",
+    "phone": "Mobile Number",
+    "organization": "Business Name",
+    "timestamp": "Application Timestamp"
+};
+
+let output = "<ul>";
+for (const [key, label] of Object.entries(requiredFields)) {
+    let value = urlParams.get(key);
+    if (value) {
+        value = decodeURIComponent(value);
+        output += `<li><strong>${label}:</strong> ${value}</li>`;
+    }
+}
+output += "</ul>";
+
+detailsContainer.innerHTML = output;

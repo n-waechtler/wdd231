@@ -21,3 +21,26 @@ if (menuButton && navMenu) {
         }
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const timestampField = document.getElementById("form-timestamp");
+    if (timestampField) {
+        timestampField.value = new Date().toISOString();
+    }
+});
+
+const openButtons = document.querySelectorAll(".open-modal");
+const closeButtons = document.querySelectorAll(".close-modal");
+
+openButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const modalId = button.getAttribute("data-modal");
+        document.getElementById(modalId).showModal();
+    });
+});
+
+closeButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        button.closest("dialog").close();
+    });
+});
