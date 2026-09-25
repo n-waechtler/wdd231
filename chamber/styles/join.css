@@ -79,6 +79,68 @@ nav a:hover {
     display: block;
 }
 
+.join-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#membership-form {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#membership-form label {
+    display: block;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+#membership-form input[type="text"],
+#membership-form input[type="email"], 
+#membership-form input[type="tel"],
+#membership-form select,
+#membership-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#membership-form input:focus,
+#membership-form select:focus,
+#membership-form textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+#membership-form input[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color .0.2s ease;
+}
+
+#membership-form input[type="submit"]:hover {
+    background-color: #003d80;
+}
+
 footer {
     background-color: #0b3c5d;
     color: white;
