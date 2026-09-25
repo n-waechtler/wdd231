@@ -141,6 +141,100 @@ nav a:hover {
     background-color: #003d80;
 }
 
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.membership-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+}
+
+.membership-card h3 {
+    margin-top: 0;
+    color: #222;
+}
+
+.membership-card button {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.membership-card button:hover {
+    background-color: #d0d0d0;
+}
+
+@keyframes cardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card:nth-child(1) { animation: cardReveal 0.6s ease-out 0.1s forward; }
+.membership-card:nth-child(2) { animation: cardReveal 0.6s ease-out 0.2s forward; }
+.membership-card:nth-child(3) { animation: cardReveal 0.6s ease-out 0.3s forward; }
+.membership-card:nth-child(4) { animation: cardReveal 0.6s ease-out 0.4s forward; }
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+dialog h2 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+dialog ul {
+    padding-left: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+dialog ul li {
+    margin-bottom: 0.5rem;
+}
+
+.close-modal {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.close-model:hover {
+    background-color: #bd2130;
+}
+
 footer {
     background-color: #0b3c5d;
     color: white;
