@@ -143,9 +143,9 @@ nav a:hover {
     font-weight: bold;
     display: block;
     width: max-content;
-    max-width: 250;
+    max-width: 250px;
     margin: 2rem auto 0 auto;
-    transition: background-color .0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
 #membership-form input[type="submit"]:hover {
@@ -212,10 +212,10 @@ nav a:hover {
     animation: fadeInSlide 0.8s ease-out forwards;
 }
 
-.membership-card:nth-child(1) { animation: cardReveal 0.6s ease-out 0.1s forward; }
-.membership-card:nth-child(2) { animation: cardReveal 0.6s ease-out 0.2s forward; }
-.membership-card:nth-child(3) { animation: cardReveal 0.6s ease-out 0.3s forward; }
-.membership-card:nth-child(4) { animation: cardReveal 0.6s ease-out 0.4s forward; }
+.membership-card:nth-child(1) { animation: cardReveal 0.6s ease-out 0.1s forwards; }
+.membership-card:nth-child(2) { animation: cardReveal 0.6s ease-out 0.2s forwards; }
+.membership-card:nth-child(3) { animation: cardReveal 0.6s ease-out 0.3s forwards; }
+.membership-card:nth-child(4) { animation: cardReveal 0.6s ease-out 0.4s forwards; }
 
 .card-np h2 {
     background-color: #4a5568;
@@ -359,3 +359,4 @@ footer p {
         margin-bottom: 0.2rem;
     }
 }
+
