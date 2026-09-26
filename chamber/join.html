@@ -49,29 +49,23 @@
             <label>First Name:
                 <input type="text" name="firstname" title="First Name" autocomplete="given-name" required>
             </label>
-            <label title="Last Name">
-                Last Name:
-                <input type="text" name="lastname" autocomplete="family-name" required>
+            <label>Last Name:
+                <input type="text" name="lastname" title="Last Name" autocomplete="family-name" required>
             </label>
-            <label title="Organizational Title">
-                Title / Position:
-                <input type="text" name="title" autocomplete="organization-title" placeholder="[A-Za-z\s\-]{7,}">
+            <label>Title / Position:
+                <input type="text" name="title" title="Organization Title" autocomplete="organization-title" placeholder="[A-Za-z\s\-]{7,}">
             </label>
-            <label title="Email Address">
-                Email:
-                <input type="email" name="email" autocomplete="email" placeholder="example@domain.com" required>
+            <label>Email:
+                <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
             </label>
-            <label title="Mobile Phone Number">
-                Mobile Phone:
-                <input type="text" name="phone" autocomplete="tel" required>
+            <label>Mobile Phone:
+                <input type="text" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
             </label>
-            <label title="Organization Name">
-                Business/Organization Name:
-                <input type="text" name="organization" autocomplete="organization" required>
+            <label>Business/Organization Name:
+                <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
             </label>
-            <label title="Membership Level">
-                Membership Level:
-                <select name="membership-level" required>
+            <label>Membership Level:
+                <select name="membership-level" title="Membership Level" required>
                     <option value="" disabled selected>Select a level...</option>
                     <option value="np">NP Membership (Non-Profit - No Fee)</option>
                     <option value="bronze">Bronze Membership</option>
@@ -79,9 +73,8 @@
                     <option value="gold">Gold Membership</option>
                 </select>
             </label>
-            <label title="Business Description">
-                Business Description:
-                <textarea name="description"></textarea>
+            <label>Business Description:
+                <textarea name="description" title="Business Description"></textarea>
             </label>
             <input type="hidden" name="timestamp" id="form-timestamp">
             <input type="submit" value="Submit Application">
