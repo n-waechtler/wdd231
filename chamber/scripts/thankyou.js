@@ -45,7 +45,7 @@ if (detailsContainer) {
             value = decodeURIComponent(value.replace(/\+/g, ' '));
 
             if (key === "timestamp") {
-                value = new Data(value).toLocaleString();
+                value = new Date(value).toLocaleString();
             }
 
             output += `<li><strong>${label}:</strong> ${value}</li>`;
