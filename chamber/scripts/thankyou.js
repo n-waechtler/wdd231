@@ -23,7 +23,6 @@ if (menuButton && navMenu) {
 }
 
 const urlParams = new URLSearchParams(window.location.search);
-
 const detailsContainer = document.getElementById("submission-details");
 
 const requiredFields = {
