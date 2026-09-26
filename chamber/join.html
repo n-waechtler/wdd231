@@ -53,7 +53,7 @@
                 <input type="text" name="lastname" title="Last Name" autocomplete="family-name" required>
             </label>
             <label>Title / Position:
-                <input type="text" name="title" id="title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters. Letters, spaces, and hyphens only.">
+                <input type="text" name="title" id="title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters. Letters, spaces, and hyphens only." required>
             </label>
             <label>Email:
                 <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
@@ -80,7 +80,7 @@
             <input type="submit" value="Submit Application">
        </form>
         <section class="membership-cards">
-            <div class="membership-card">
+            <div class="membership-card card-np">
                 <h2>NP Membership</h2>
                 <p>Designed for non-profit and community organizations.</p>
                 <button class="open-modal" data-modal="modal-np">Learn More</button>
@@ -95,9 +95,9 @@
                 </ul>
                 <button class="close-modal">Close</button>
             </dialog>
-            <div class="membership-card">
+            <div class="membership-card card-bronze">
                 <h2>Bronze Membership</h2>
-                <p>Perfect fpr freelancers, startups, and small local businesses.</p>
+                <p>Perfect for freelancers, startups, and small local businesses.</p>
                 <button class="open-modal" data-modal="modal-bronze">Learn More</button>
             </div>
             <dialog id="modal-bronze">
@@ -110,7 +110,7 @@
                 </ul>
                 <button class="close-modal">Close</button>
             </dialog>
-            <div class="membership-card">
+            <div class="membership-card card-silver">
                 <h2>Silver Membership</h2>
                 <p>For growing businesses looking to expand their local footprint.</p>
                 <button class="open-modal" data-modal="modal-silver">Learn More</button>
@@ -126,7 +126,7 @@
                 </ul>
                 <button class="close-modal">Close</button>
             </dialog>
-            <div class="membership-card">
+            <div class="membership-card card-gold">
                 <h2>Gold Membership</h2>
                 <p>Our premier tier offering maximum exposure and advocacy leadership.</p>
                 <button class="open-modal" data-modal="modal-gold">Learn More</button>

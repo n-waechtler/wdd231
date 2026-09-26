@@ -35,14 +35,27 @@ const requiredFields = {
     "timestamp": "Application Timestamp"
 };
 
-let output = "<ul>";
-for (const [key, label] of Object.entries(requiredFields)) {
-    let value = urlParams.get(key);
-    if (value) {
-        value = decodeURIComponent(value);
-        output += `<li><strong>${label}:</strong> ${value}</li>`;
+if (detailsContainer) {
+    let output = "<ul>";
+    let hasData = false;
+    for (const [key, label] of Object.entries(requiredFields)) {
+        let value = urlParams.get(key);
+        if (value) {
+            hasData = true;
+            value = decodeURIComponent(value.replace(/\+/g, ' '));
+
+            if (key === "timestamp") {
+                value = new Data(value).toLocaleString();
+            }
+
+            output += `<li><strong>${label}:</strong> ${value}</li>`;
+        }
+    }
+    output += "</ul>"
+
+    if (hasData) {
+        detailsContainer.innerHTML = output;
+    } else {
+        detailsContainer.innerHTML = "<p>No submission form data discovered. Please register via our main application portal.</p>"
     }
 }
-output += "</ul>";
-
-detailsContainer.innerHTML = output;
