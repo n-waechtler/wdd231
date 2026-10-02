@@ -1,0 +1,18 @@
+ .discover-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-areas: 
+        "area1 area1 area2"
+        "area3 area4 area2"
+        "area5 area6 area7"
+        "area8 area8 area7";
+}
+  
+.discover-grid img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.discover-card img:hover {
+    transform: scale(1.04);
+    filter: saturate(130%) contrast(105%);
+}
