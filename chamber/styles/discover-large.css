@@ -1,6 +1,9 @@
  .discover-grid {
     max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    align-items: start;
+    gap: 20px;
     grid-template-areas: 
         "area1 area1 area2"
         "area3 area4 area2"
