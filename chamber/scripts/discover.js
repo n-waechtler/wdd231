@@ -37,7 +37,7 @@ itemsOfInterest.forEach(item => {
     </figure>
     <address>${item.address}</address>
     <p>${item.description}</p>
-    <button>Learn More</button>
+    <button type="button">Learn More</button>
     `;
     gridContainer.appendChild(card);
 });

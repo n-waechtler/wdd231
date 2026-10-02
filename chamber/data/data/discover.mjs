@@ -24,10 +24,10 @@ export const itemsOfInterest = [
         "description": "Explore Hogle Zoo in Salt Lake City! See amazing animals, enjoy fun attractions, and plan your visit for a wild adventure the whole family will love.",
     },
     {
-        "name": "",
-        "image": "",
-        "address": "",
-        "description": "",
+        "name": "Loveland Living Planet Aquarium",
+        "image": "images/loveland.webp",
+        "address": "12033 S Lone Peak  Pkwy, Draper, UT 84020",
+        "description": "Visit Loveland Living Planet Aquarium to Explore, Discover, and Learn about Earth's diverse ecosystems. See penguins, sharks, sloths, and more!",
     },
     {
         "name": "",

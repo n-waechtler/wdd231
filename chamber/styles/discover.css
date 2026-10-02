@@ -103,6 +103,23 @@ nav a:hover {
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.discover-card h2 {
+    width: 100%;
+    text-align: center !important;
+    margin: 0 0 15px 0 !important;
+}
+
+.discover-card figure {
+    margin: 0 0 15px 0 !important;
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .discover-card img {
@@ -118,6 +135,38 @@ nav a:hover {
     padding: 10px;
     grid-template-areas: "area1" "area2" "area3" "area4"
                         "area5" "area6" "area7" "area8";
+}
+
+.discover-card address {
+    font-style: normal;
+    text-align: center !important;
+    margin: 0 0 10px 0 !important;
+    width: 100%;
+}
+
+.discover-card p {
+    text-align: center !important;
+    margin: 0 0 20px 0 !important;
+    width: 100%;
+}
+
+.discover-card button {
+    display: inline-block !important;
+    width: max-content !important;
+    padding: 10px 25px !important;
+    margin: 0 auto !important;
+    background-color: #0066cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.discover-card button:hover {
+    background-color: #004499;
 }
 
 .discover-card:nth-child(1) { grid-area: area1; }
