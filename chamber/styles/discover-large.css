@@ -16,3 +16,37 @@
     transform: scale(1.04);
     filter: saturate(130%) contrast(105%);
 }
+
+.discover-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.discover-card h2 {
+    width: 100%;
+    text-align: center !important;
+    margin: 0 0 15px 0 !important;
+}
+
+.discover-card figure {
+    width: 100%;
+    margin: 0 0 15px 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.discover-card address,
+.discover-card p {
+    text-align: center !important;
+    width: 100%;
+}
+
+.discover-card button {
+    display: inline-block !important;
+    width: max-content !important;
+    margin: auto auto 0 auto !important;
+    /* Forces button to the bottom center */
+    padding: 10px 25px !important;
+}

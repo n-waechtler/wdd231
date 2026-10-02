@@ -28,7 +28,7 @@ const gridContainer = document.querySelector('.discover-grid');
 
 itemsOfInterest.forEach(item => {
     const card = document.createElement('section');
-    card.classname = 'discover-card';
+    card.className = 'discover-card';
 
     card.innerHTML = `
     <h2>${item.name}</h2>
