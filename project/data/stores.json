@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Salt City Games",
+        "address": "2160 W 4700 S, Taylorsville, UT 84129",
+        "phone": "801-964-4031",
+        "website": "https://saltcitygames.shop",
+        "image": "images/sl-games.jpg",
+        "membershipLevel": "2"
+    },
+    {
+        "name": "Galaxy of Games",
+        "address": "12488 S Rosecrest Rd C1, Herriman, UT 84096",
+        "phone": "801-332-9889",
+        "website": "https://galaxyof.games",
+        "image": "images/galaxy.jpg",
+        "membershipLevel": "3"
+    },
+    {
+        "name": "Game Night Games",
+        "address": "2148 S 900 E, STE 2, Salt Lake City, UT 84106",
+        "phone": "801-467-2400",
+        "website": "https://gamenightgames.com",
+        "image": "images/game-night.jpg",
+        "membershipLevel": "2"
+    },
+    {
+        "name": "Demolition Games",
+        "address": "85 W 3300 S, Salt Lake City, UT 84115",
+        "phone": "385-229-4739",
+        "website": "https://facebook.com/demolitiongameslc",
+        "image": "images/demo-games.jpg",
+        "membershipLevel": "1"
+    },
+    {
+        "name": "SuperKo Cards",
+        "address": "3368 5600 W, West Valley City, UT 84120",
+        "phone": "801-597-4276",
+        "website": "https://superkocards.com",
+        "image": "images/super_ko_circle.jpg",
+        "membershipLevel": "3"
+    },
+    {
+        "name": "Hastur Games",
+        "address": "6831 S State St, Midvale, UT 84047",
+        "phone": "801-352-2605",
+        "website": "https://hasturgames.com",
+        "image": "images/hastur.jpg",
+        "membershipLevel": "2"
+    },
+    {
+        "name": "Oasis Games",
+        "address": "275 E 400 S, Salt Lake City, UT 84111",
+        "phone": "801-738-4413",
+        "website": "https://oasisgamesslc.com",
+        "image": "images/oasis.jpg",
+        "membershipLevel": "2"
+    },
+    {
+        "name": "Riftgate Games",
+        "address": "5412 S 900 E, Millcreek, UT 84117",
+        "phone": "801-200-3809",
+        "website": "https://riftgate.com",
+        "image": "images/riftgate.jpg",
+        "membershipLevel": "1"
+    }
+]
