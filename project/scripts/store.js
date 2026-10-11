@@ -58,7 +58,6 @@ function buildMemberCards(members) {
                 <img src="${member.image}" alt="${member.name} Logo" loading="lazy" width="200" height="150">
             </div>
             <h3>${member.name}</h3>
-            <p class="tagline">"${member.tagline}"</p>
             <hr>
             <p class="contact-info">📍 ${member.address}</p>
             <p class="contact-info">📞 ${member.phone}</p>

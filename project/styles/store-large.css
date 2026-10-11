@@ -14,30 +14,40 @@
     }
 
     #navMenu {
-        display: flex !important;
-        gap: 2rem;
+        display: flex;
+        flex-direction: row;
         list-style: none;
-        padding: 1rem;
+        justify-content: space-around;
+        padding: 0;
         margin: 0;
         position: static;
         width: auto;
-        box-shadow: none;
+        background-color: #222222;
+        text-align: center;
+        gap: 2rem;
         }
 
     #navMenu li {
         border-bottom: none;
         padding: 0;
+        display: flex;
+        flex: 1;
     }
 
     #navMenu a {
-        display: inline;
-        padding: 0;
+        display: block;
+        width: 100%;
+        padding: .85rem 1.5rem;
         color: #ffffff;
+        text-decoration: none;
+        transition: background-color 0.2s ease, color 0.2s ease;
     }
 
     #navMenu a:hover {
-        color: #ffd700 !important;
-        text-decoration: underline;
+        background-color: #555555;
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
     }
 
     #directoryContainer.grid-mode {
