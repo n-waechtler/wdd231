@@ -26,6 +26,23 @@
             "area8 area8 area7";
     }
 
+    .events-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 40px;
+    }
+
+    .events-wrapper li {
+        border-bottom: 1px solid #f0f0f0;
+        padding: .5rem 1rem;
+        transition: background-color 0.2s ease;
+    }
+
+    .events-wrapper li:hover {
+        background-color: #f9f9f9;
+        border-radius: 4px;
+    }
+
     #navMenu {
         display: flex;
         flex-direction: row;
