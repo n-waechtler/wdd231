@@ -18,14 +18,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .75rem 1rem;
+    padding: 2rem 2rem;
 }
 
 header img {
     max-width: 60px;
     width: 100%;
     height: auto;
-    margin-left: -8px;
+    margin-left: 0;
 }
 
 header .logo-group {
@@ -38,7 +38,6 @@ header span {
     font-size: 1.3rem;
     font-weight: bold;
     white-space: nowrap;
-    margin-left: -20px;
 }
 
 #menuButton {
@@ -55,6 +54,12 @@ nav {
     background-color: #222222;
     margin-bottom: 1rem;
     border-radius: 0 0 4px 4px;
+}
+
+#navMenu li {
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav ul {
@@ -112,13 +117,6 @@ h1 {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-}
-
-.logo-group img {
-    width: 150px;
-    max-width: 100%;
-    height: auto;
-    padding: 1.5rem;
 }
 
 .filters {
